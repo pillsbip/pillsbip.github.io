@@ -9,7 +9,9 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-
+<!-- Plugins CSS -->
+<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
+    
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
@@ -38,11 +40,11 @@
 <div id="page">
 <div class="bgtop">
 <div class="bgbtm">
-<div class="col-md-4">
+<div  class="col-md-4">
 <div id="sidebar">
 					<ul>
 						<li>
-							<h2>Projects</h2>
+							<h2><i class="fa fa-diamond"></i> Projects</h2>
 							<ul>
 								<div ng-controller="myCtrl">
                                                                 <li> <button ng-click="myFunc6()" ng-model="myValue6" />Statistical analysis for client reports - AccessibilityOz</li>
@@ -57,17 +59,18 @@
                                        </ul>
 </div>
 </div>
+
 <div class="col-md-8">
 <div id="content">
 <div class="post">
-<h1 class="title">About Me</h1>
+<h1 class="title"><i class="fa fa-user"></i> About Me </h1>
 <p class="byline"></p>
 <div class="entry">
 							<p> <strong><img src="images/my_pic.jpg" alt="" class="left" />I</strong> recently finished work at AccessibilityOz as a technical analyst and am currently looking for new opportunities. My duties at AccessibilityOz included statistical analysis for client reports and development of accessible as well as responsive websites. Before AccessibilityOz, I worked on i) customer and employee data with iSelect-Analytics and Data Services Division ii) health data (related to human voices) for the project TransVoices with the Royal Children's Hospital. I am interested in challenging projects that utilize my quantitative as well qualitative analytical skills and knowledge in programming languages such as R, Python, SAS and SQL.  </p>
 </div>
 </div>
 <div class="post">
-						<h2 class="title">My Projects-Sample Results</h2>
+						<h2 class="title"><i class="fa fa-briefcase"></i> My Projects-Sample Results</h2>
 						<p class="byline"></p>
 						<div class="entry">
 							<p>A list of projects that I have recently worked on is available on the side-bar.
@@ -78,10 +81,10 @@
 
 
 <div class="post" ng-show="count6">
-				<h2 class="title">Statistical​ ​analysis​ ​for​ ​client​ ​reports  </h2>
+				<h2 class="title"><i class="fa fa-eye"></i> Statistical​ ​analysis​ ​for​ ​client​ ​reports - AccessibilityOz </h2>
                          <p class="byline"></p>
 <div class="entry">
-			<p>This project was carried out at AccessibilityOz. Using R, mySQL, HTML and Bootstrap, I developed a program that performs  statistical analysis of accessibility related errors detected across the websites of all the  community colleges and programs under the California Community Colleges System (CCCS). I have created R functions that can interface with Bootstrap libraries. This program uses these libraries to convert the results into accessible and responsive web pages that can be viewed with ease across desktops and a range of mobile devices. The results are illustrated using pie charts, bar charts and histograms.						
+			<p>This project was carried out at AccessibilityOz. I am unable to provide sample results due to intellectual property issues. Using R, mySQL, HTML and Bootstrap, I developed a program that performs  statistical analysis of accessibility related errors detected across the websites of all the  community colleges and programs under the California Community Colleges System (CCCS). I have created R functions that can interface with Bootstrap libraries. This program uses these libraries to convert the results into accessible and responsive web pages that can be viewed with ease across desktops and a range of mobile devices. The results are illustrated using pie charts, bar charts and histograms.						
 </div>
 
 
@@ -94,7 +97,7 @@
 
 
 <div class="post" ng-show="count5">
-				<h2 class="title">Analysis of customer and employee data</h2>
+				<h2 class="title"><i class="fa fa-eye"></i> Analysis of customer and employee data - iSelect</h2>
                          <p class="byline"></p>
 <div class="entry">
 			<p>Before AccessibilityOz, I was working at iSelect-Analytics and Data Services Division.
@@ -146,7 +149,7 @@ agent performance, based on a 95% confidence interval.
 
 
 <div class="post" ng-show="count">
-				<h2 class="title">Machine learning for speech therapy</h2>
+				<h2 class="title"><i class="fa fa-eye"></i> Machine learning for speech therapy</h2>
                          <p class="byline"></p>
 <div class="entry">
 			<p>In this project, I investigate the use of machine learning for speech therapy. 
@@ -163,7 +166,7 @@ agent performance, based on a 95% confidence interval.
 </div>	
 
 <div class="post" ng-show="count1">
-				<h2 class="title">Energy consumption of data mining</h2>
+				<h2 class="title"><i class="fa fa-eye"></i> Energy consumption of data mining</h2>
                          <p class="byline"></p>
 <div class="entry">
 			<p>I have created a blog (available ​<a href="http://dataminingenergy.blogspot.com.au​"> here </a>) on energy consumption of data mining algorithms. This blog was the result of the work that I carried out at Centre for Energy-Efficient Telecommunications (CEET).  I investigated energy consumption of supervised
@@ -175,7 +178,7 @@ database management, including accessing the data for processing. For example, I
 
 </div>	
 <div class="post" ng-show="count2">
-				<h2 class="title">Analysis of social media sentiment</h2>
+				<h2 class="title"><i class="fa fa-eye"></i> Analysis of social media sentiment</h2>
                          <p class="byline"></p>
 <div class="entry">
 			<p>This is a personal interest project I have worked on after participation in the kaggle competition (featuring text mining) organized by Data Science Melbourne in April 2016.I have built software in R (based on twitteR package and RTextTools package) that downloads tweets from Twitter containing a particular phrase and then evaluates the sentiment associated with that phrase. For example, the plot below corresponds to the sentiment on Twitter corresponding to the phrase 'negative gearing' over a three day period in July. The difference between the predicted and actual fraction of tweets against negative gearing was found to be less than 10%. Thus my software package predicts sentiment with reasonable accuracy.</p>
@@ -185,7 +188,7 @@ database management, including accessing the data for processing. For example, I
 
 </div>	
 <div class="post" ng-show="count3">
-				<h2 class="title">Portfolio using HTML and AngularJS</h2>
+				<h2 class="title"><i class="fa fa-eye"></i> Portfolio using HTML, Bootstrap and AngularJS</h2>
                          <p class="byline"></p>
 <div class="entry">
 			<p>My personal portfolio, <a href="https://pillsbip.github.io">available online here</a>, illustrates my familiarity with HTML, Bootstrap and AngularJS.  This portfolio is a client-side dynamic web page, with the page display determined by the side bar buttons clicked by the user accessing the web page. The page scales and adjusts its display to the size of the screen used to view it.
@@ -196,9 +199,7 @@ database management, including accessing the data for processing. For example, I
 
 
 
-<div id="footer">
-	<p>HTML template design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> &nbsp;&bull;&nbsp; Icons by <a href="http://www.famfamfam.com/">FAMFAMFAM</a>.</p>
-</div>
+
 
 </div>
 </div>

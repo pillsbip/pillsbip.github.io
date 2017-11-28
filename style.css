@@ -138,15 +138,10 @@ hr {
 .title {
 	padding: 0 20px 5px 0px;
 	font-size: 26px;
-
-background: url(images/img07.gif) no-repeat right 100%;
-    
-
-	
-	border-bottom: 2px #66A342 dashed;
+        border-bottom: 2px #66A342 dashed;
 	margin-right: 20px;
 }
-@media screen and (min-width: 610px) {
+/*@media screen and (min-width: 610px) {
 .title {
 	padding: 0 20px 5px 0px;
 	font-size: 26px;
@@ -158,8 +153,8 @@ background: url(images/img06.gif) no-repeat right 40%;
 	border-bottom: 2px #66A342 dashed;
 	margin-right: 20px;
 }
-}
-@media screen and (min-width: 610px) {
+}*/
+/*@media screen and (min-width: 610px) {
 .title {
 	padding: 0 20px 5px 0px;
 	font-size: 26px;
@@ -171,7 +166,7 @@ background: url(images/img06.gif) no-repeat right 40%;
 	border-bottom: 2px #66A342 dashed;
 	margin-right: 20px;
 }
-}
+}*/
 .title a {
 	text-decoration: none;
 	color: #66A342;
@@ -281,16 +276,17 @@ background: url(images/img06.gif) no-repeat right 40%;
 	margin: 0 0 0 0;
 	margin: 0 0 0 0;
 	line-height: 35px;
-	border-bottom: 1px #66A342 dotted;
+	/*border-bottom: 1px #66A342 dotted;*/
 }
 
 #sidebar h2 {
-	margin: 0px 0 0 20px; 
+	margin: 20px 0 0 20px; 
 	height: 35px;
 	font-size: 18px;
 	color: #66A342;
-	background: url(images/img04.gif) no-repeat right 30%;
-	border-bottom: 2px #66A342 dashed;
+        text-align: center;
+	/*background: url(images/img04.gif) no-repeat right 30%;*/
+	/*border-bottom: 2px #66A342 dashed;*/
 }
 
 #sidebar a {
