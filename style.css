@@ -371,12 +371,17 @@ background: url(images/img06.gif) no-repeat right 40%;
 }
 
 img { border: none; 
+width: 530px;
+max-width: 100%;
 
 }
 
-img.left {
 
-        float: left;
+.entry img.left {
+       border: none; 
+       width: 131px;
+       max-width: 100%;
+       float: left;
 	margin: 3px 10px -5px -0px;
 }
 

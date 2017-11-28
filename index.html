@@ -45,11 +45,12 @@
 							<h2>Projects</h2>
 							<ul>
 								<div ng-controller="myCtrl">
+                                                                <li> <button ng-click="myFunc6()" ng-model="myValue6" />Statistical analysis for client reports</li>
 								<li> <button ng-click="myFunc5()" ng-model="myValue5" />Analysis of customer and employee data-iSelect</li>
 								<li> <button ng-click="myFunc()" ng-model="myValue" />Machine learning for speech therapy</li>
 								<li><button ng-click="myFunc1()" ng-model="myValue1" />Energy consumption of data mining</li>
 								<li><button ng-click="myFunc2()" ng-model="myValue2" />Analysis of social media sentiment</li>
-								<li><button ng-click="myFunc3()" ng-model="myValue3" "/>Portfolio using HTML and AngularJS</li>
+								<li><button ng-click="myFunc3()" ng-model="myValue3" "/>Portfolio using HTML, Bootstrap and AngularJS</li>
 </div>
 							</ul>
 						</li>
@@ -62,7 +63,7 @@
 <h1 class="title">About Me</h1>
 <p class="byline"></p>
 <div class="entry">
-							<p> <strong><img src="images/my_pic.jpg" alt="" width="131" class="left" />I</strong> recently finished work at AccessibilityOz as a technical analyst and am currently looking for new opportunities. My duties at AccessibilityOz included statistical analysis for client reports and development of accessible as well as responsive websites. Before AccessibilityOz, I worked on i) customer and employee data with iSelect-Analytics and Data Services Division ii) health data (related to human voices) for the project TransVoices with the Royal Children's Hospital. I am interested in challenging projects that utilize my quantitative as well qualitative analytical skills and knowledge in programming languages such as R, Python, SAS and SQL.  </p>
+							<p> <strong><img src="images/my_pic.jpg" alt="" class="left" />I</strong> recently finished work at AccessibilityOz as a technical analyst and am currently looking for new opportunities. My duties at AccessibilityOz included statistical analysis for client reports and development of accessible as well as responsive websites. Before AccessibilityOz, I worked on i) customer and employee data with iSelect-Analytics and Data Services Division ii) health data (related to human voices) for the project TransVoices with the Royal Children's Hospital. I am interested in challenging projects that utilize my quantitative as well qualitative analytical skills and knowledge in programming languages such as R, Python, SAS and SQL.  </p>
 </div>
 </div>
 <div class="post">
@@ -75,12 +76,29 @@
 						
 	</div>			
 
+
+<div class="post" ng-show="count6">
+				<h2 class="title">Statistical​ ​analysis​ ​for​ ​client​ ​reports - AccessibilityOz </h2>
+                         <p class="byline"></p>
+<div class="entry">
+			<p>This project was carried out at AccessibilityOz. Using R, mySQL, HTML and Bootstrap, I developed a program that performs  statistical analysis of accessibility related errors detected across the websites of all the  community colleges and programs under the California Community Colleges System (CCCS). I have created R functions that can interface with Bootstrap libraries. This program uses these libraries to convert the results into accessible and responsive web pages that can be viewed with ease across desktops and a range of mobile devices. The results are illustrated using pie charts, bar charts and histograms.						
+</div>
+
+
+</div>	
+
+
+
+
+
+
+
 <div class="post" ng-show="count5">
 				<h2 class="title">Analysis of customer and employee data</h2>
                          <p class="byline"></p>
 <div class="entry">
-			<p>I am currently working at iSelect-Analytics and Data Services Division.
-			My project involves analysis of customer and employee data.
+			<p>Before AccessibilityOz, I was working at iSelect-Analytics and Data Services Division.
+			My project involved analysis of customer and employee data.
 			I am unable to provide sample results as they are iSelect intellectual property.
 			I have completed the following tasks:
 <ul>
@@ -109,7 +127,7 @@ as a result of two different training programs and has demonstrated that there i
 agent performance, based on a 95% confidence interval.
 </li>
 <li>
- iSelect has recently moved to Salesforce customer resource management (CRM) which stores information in
+ iSelect moved to Salesforce customer resource management (CRM) which stores information in
  JSON format . I have written T-SQL code so as to interface with Salesforce CRM and extract information for 
  reporting purposes. The reports are prepared as Tableau dashboards.
  </li>
@@ -138,7 +156,7 @@ agent performance, based on a 95% confidence interval.
 			The comparison is based on acoustic parameters generated using signal processing.
 			We have used variable reduction techniques to shortlist relevant acoustic parameters.
 			Some of the files used for implementing this project are available on <a href="https://github.com/pillsbip/pillsbip.github.io/tree/master/transvoices">github</a>. This project involves use of R for implementing machine learning. Node.JS and AngularJS are being used for building the web interface for accessing the voice files of the person undergoing speech therapy. The figure below provides the confusion matrix for a set of 950 male and female voices for two of the machine learning algorithms being used. The results show that the algorithms being used are able to provide predictions with high accuracy.</p>
-<center><img src="images/Gender_Prediction.png" alt="" width="400" align="middle" /></center>
+<center><img src="images/Gender_Prediction.png" alt="" align="middle" /></center>
 						</div>
 
 
@@ -151,7 +169,7 @@ agent performance, based on a 95% confidence interval.
 			<p>I have created a blog (available ​<a href="http://dataminingenergy.blogspot.com.au​"> here </a>) on energy consumption of data mining algorithms. This blog was the result of the work that I carried out at Centre for Energy-Efficient Telecommunications (CEET).  I investigated energy consumption of supervised
 (regression, forecasting etc) and unsupervised (clustering, correlation etc) machine learning algorithms and platforms for their implementation. This project involved use of R as well as SAS Studio for scripting the statistical analysis algorithms. SQL was used for
 database management, including accessing the data for processing. For example, I have shown that SAS University Edition consumes more energy than R for algorithm implementation (as shown in the illustrative figure below corresponding to box plot generation). This is due to the fact that SAS University Edition is implemented as a virtual machine, leading to energy overheads associated with virtualization. </p>
-<center><img src="images/SAS_vs_R_energy.png" alt="" width="400" align="middle" /></center>
+<center><img src="images/SAS_vs_R_energy.png" alt="" align="middle" /></center>
 </div>
 
 
@@ -161,7 +179,7 @@ database management, including accessing the data for processing. For example, I
                          <p class="byline"></p>
 <div class="entry">
 			<p>This is a personal interest project I have worked on after participation in the kaggle competition (featuring text mining) organized by Data Science Melbourne in April 2016.I have built software in R (based on twitteR package and RTextTools package) that downloads tweets from Twitter containing a particular phrase and then evaluates the sentiment associated with that phrase. For example, the plot below corresponds to the sentiment on Twitter corresponding to the phrase 'negative gearing' over a three day period in July. The difference between the predicted and actual fraction of tweets against negative gearing was found to be less than 10%. Thus my software package predicts sentiment with reasonable accuracy.</p>
-<center><img src="images/tweet_results.png" alt="" width="400" align="middle" /></center>
+<center><img src="images/tweet_results.png" alt=""  align="middle" /></center>
 </div>
 
 
@@ -170,7 +188,7 @@ database management, including accessing the data for processing. For example, I
 				<h2 class="title">Portfolio using HTML and AngularJS</h2>
                          <p class="byline"></p>
 <div class="entry">
-			<p>My personal portfolio, <a href="https://pillsbip.github.io">available online here</a>, illustrates my familiarity with HTML and AngularJS.  This portfolio is a client-side dynamic web page, with the page display determined by the side bar buttons clicked by the user accessing the web page.
+			<p>My personal portfolio, <a href="https://pillsbip.github.io">available online here</a>, illustrates my familiarity with HTML, Bootstrap and AngularJS.  This portfolio is a client-side dynamic web page, with the page display determined by the side bar buttons clicked by the user accessing the web page. The page scales and adjusts its display to the size of the screen used to view it.
 </div>
 
 
@@ -196,10 +214,14 @@ database management, including accessing the data for processing. For example, I
 angular.module('myApp', [])
 .controller('myCtrl', ['$scope','$rootScope', function($scope,$rootScope) {
     $scope.count = 0; $rootScope.count = 0;$scope.count1 = 0; $rootScope.count1 = 0;$scope.count2 = 0; $rootScope.count2 = 0;$scope.count3 = 0; $rootScope.count3 = 0;
-    $scope.count5 = 0; $rootScope.count5 = 0
+    $scope.count5 = 0;
+$scope.count6 = 0;
+ $rootScope.count5 = 0;
+$rootScope.count6 = 0;
     $scope.myFunc5 = function() {
         $scope.count5=($scope.count5+1)%2;
-         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count = 0;
+         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count = 0;$scope.count6 = 0;
+         $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
            $rootScope.count1=$scope.count1;
         $rootScope.count=$scope.count;
@@ -208,7 +230,8 @@ $rootScope.count3=$scope.count3;
     };
    $scope.myFunc = function() {
         $scope.count=($scope.count+1)%2;
-         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count5 = 0;
+         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count5 = 0;$scope.count6 = 0;
+         $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
            $rootScope.count1=$scope.count1;
         $rootScope.count=$scope.count;
@@ -218,8 +241,9 @@ $rootScope.count3=$scope.count3;
     $scope.myFunc1 = function() {
         $scope.count1=($scope.count1+1)%2;
 	
-         $scope.count = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count5 = 0;
+         $scope.count = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count5 = 0;$scope.count6 = 0;
 	 $rootScope.count5=$scope.count5;
+         $rootScope.count6=$scope.count6;
         $rootScope.count1=$scope.count1;
         $rootScope.count=$scope.count;
     $rootScope.count2=$scope.count2;
@@ -227,7 +251,8 @@ $rootScope.count3=$scope.count3;
 };
  $scope.myFunc2 = function() {
         $scope.count2=($scope.count2+1)%2;
-         $scope.count = 0; $scope.count1 = 0; $scope.count3 = 0;$scope.count5 = 0;
+         $scope.count = 0; $scope.count1 = 0; $scope.count3 = 0;$scope.count5 = 0;$scope.count6 = 0;
+         $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
         $rootScope.count2=$scope.count2;
         $rootScope.count=$scope.count;
@@ -237,7 +262,18 @@ $rootScope.count3=$scope.count3;
 
  $scope.myFunc3 = function() {
         $scope.count3=($scope.count3+1)%2;
+         $scope.count = 0; $scope.count1 = 0; $scope.count2 = 0;$scope.count5 = 0;$scope.count6 = 0;
+         $rootScope.count6=$scope.count6;
+	 $rootScope.count5=$scope.count5;
+        $rootScope.count2=$scope.count2;
+        $rootScope.count=$scope.count;
+        $rootScope.count1=$scope.count1;
+$rootScope.count3=$scope.count3;
+    };
+ $scope.myFunc6 = function() {
+        $scope.count6=($scope.count6+1)%2;
          $scope.count = 0; $scope.count1 = 0; $scope.count2 = 0;$scope.count5 = 0;
+         $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
         $rootScope.count2=$scope.count2;
         $rootScope.count=$scope.count;
