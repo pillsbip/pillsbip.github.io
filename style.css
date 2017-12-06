@@ -77,12 +77,14 @@ hr {
 }
 
 #header {
-	width: 800px;
+	/*width: 800px;*/
         max-width: 100%;
+        min-width: 100%;
 	height: 300px;
         max-height: 30%;
 	margin: 0 auto;
-	background: url(images/img02.jpg) no-repeat left top;
+	background: url(images/img02n.jpg) no-repeat center top;
+        /*background-image: cover;*/
 }
 
 #header h1, #header p {
@@ -114,19 +116,20 @@ hr {
 /* Page */
 
 #page {
-	width: 800px;
+	
         max-width: 100%;
+        min-width: 100%;
 	margin: 0 auto;
 	padding-top: 30px;
-	background: url(images/img03.jpg) no-repeat left top;
+	
 }
 
 /* Content */
 
 #content {
 	float: left;
-	width: 530px;
-        max-width: 100%;
+	max-width: 100%;
+        min-width: 100%;
 	margin: 0;
 	padding-left: 30px;
 	color: #666666;
@@ -249,11 +252,17 @@ background: url(images/img06.gif) no-repeat right 40%;
 
 #sidebar {
 	/*float: right;*/
-	width: 210px;
-        max-width: 25%
+	max-width: 100%;
+        min-width: 100%;
 	margin-bottom: 10px;
 	padding-right: 30px;
 	color: #66A342;
+}
+#sidebar button {
+	/*float: right;*/
+	max-width: 100%;
+        min-width: 100%;
+	
 }
 
 #sidebar ul {
@@ -275,7 +284,7 @@ background: url(images/img06.gif) no-repeat right 40%;
 #sidebar li li {
 	margin: 0 0 0 0;
 	margin: 0 0 0 0;
-	line-height: 35px;
+	line-height: 25px;
 	/*border-bottom: 1px #66A342 dotted;*/
 }
 
