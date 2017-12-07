@@ -53,13 +53,16 @@ blockquote p, blockquote ul, blockquote ol {
 }
 
 a {
-	color: #66A342;
+	color: #0000EE;
+        text-decoration: underline;
 }
 
 a:hover {
 	color: #66A342;
 }
-
+a:focus {
+	color: #66A342;
+}
 hr {
 	display: none;
 }
@@ -264,7 +267,14 @@ background: url(images/img06.gif) no-repeat right 40%;
         min-width: 100%;
 	
 }
-
+#sidebar button:hover {
+	background-color: #66A342;
+        color: #ffffff;
+}
+#sidebar button:focus {
+	background-color: #66A342;
+        color: #ffffff;
+}
 #sidebar ul {
 	margin: 0;
 	padding: 0;
@@ -312,7 +322,7 @@ background: url(images/img06.gif) no-repeat right 40%;
 	display: none;
 }
 
-#search input#s {
+#search inputs {
 	display: block;
 	width: 230px;
 	padding: 2px 5px;
@@ -375,7 +385,9 @@ background: url(images/img06.gif) no-repeat right 40%;
 	color: #69B536;
 }
 
-img { border: none; 
+img {   padding:5px;
+   border:5px solid #66A342;
+background-color:#66A342;
 width: 530px;
 max-width: 100%;
 
