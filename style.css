@@ -265,16 +265,29 @@ background: url(images/img06.gif) no-repeat right 40%;
 	/*float: right;*/
 	max-width: 100%;
         min-width: 100%;
+      outline-color: red;
 	
 }
+#sidebar button::before {
+  padding: 5px 0;
+  
+}
 #sidebar button:hover {
+
+border:2px solid blue;
+}
+
+
+.setbg {
 	background-color: #66A342;
         color: #ffffff;
+        /*outline-style: none;*/
 }
-#sidebar button:focus {
+
+/*#sidebar button:focus {
 	background-color: #66A342;
         color: #ffffff;
-}
+}*/
 #sidebar ul {
 	margin: 0;
 	padding: 0;

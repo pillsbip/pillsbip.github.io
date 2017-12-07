@@ -57,12 +57,12 @@
 							<h2><i class="fa fa-diamond"></i> Projects</h2>
 							<ul>
 								<div ng-controller="myCtrl">
-                                                                <li> <button ng-click="myFunc6()" ng-model="myValue6" />Statistical analysis for client reports - AccessibilityOz</li>
-								<li> <button ng-click="myFunc5()" ng-model="myValue5" />Analysis of customer and employee data-iSelect</li>
-								<li> <button ng-click="myFunc()" ng-model="myValue" />Machine learning for speech therapy</li>
-								<li><button ng-click="myFunc1()" ng-model="myValue1" />Energy consumption of data mining</li>
-								<li><button ng-click="myFunc2()" ng-model="myValue2" />Analysis of social media sentiment</li>
-								<li><button ng-click="myFunc3()" ng-model="myValue3" "/>Portfolio using HTML, Bootstrap and AngularJS</li>
+                                                                <li> <button ng-click="myFunc6()" ng-class="{'setbg': count6 == 1}"  ng-model="myValue6" />Statistical analysis for client reports - AccessibilityOz</li>
+								<li> <button ng-click="myFunc5()" ng-class="{'setbg': count5 == 1}" ng-model="myValue5" />Analysis of customer and employee data-iSelect</li>
+								<li> <button ng-click="myFunc()" ng-class="{'setbg': count == 1}" ng-model="myValue" />Machine learning for speech therapy</li>
+								<li><button ng-click="myFunc1()" ng-class="{'setbg': count1 == 1}" ng-model="myValue1" />Energy consumption of data mining</li>
+								<li><button ng-click="myFunc2()" ng-class="{'setbg': count2 == 1}" ng-model="myValue2" />Analysis of social media sentiment</li>
+								<li><button ng-click="myFunc3()" ng-class="{'setbg': count3 == 1}" ng-model="myValue3" "/>Portfolio using HTML, Bootstrap and AngularJS</li>
 </div>
 							</ul>
 						</li>
@@ -226,9 +226,10 @@ angular.module('myApp', [])
 .controller('myCtrl', ['$scope','$rootScope', function($scope,$rootScope) {
     $scope.count = 0; $rootScope.count = 0;$scope.count1 = 0; $rootScope.count1 = 0;$scope.count2 = 0; $rootScope.count2 = 0;$scope.count3 = 0; $rootScope.count3 = 0;
     $scope.count5 = 0;
-$scope.count6 = 0;
+$scope.count6 = 0;$scope.color6=0;$rootScope.color6=0;
  $rootScope.count5 = 0;
 $rootScope.count6 = 0;
+
     $scope.myFunc5 = function() {
         $scope.count5=($scope.count5+1)%2;
          $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count = 0;$scope.count6 = 0;
@@ -282,7 +283,9 @@ $rootScope.count3=$scope.count3;
 $rootScope.count3=$scope.count3;
     };
  $scope.myFunc6 = function() {
+        
         $scope.count6=($scope.count6+1)%2;
+        $scope.count3 = 0;
          $scope.count = 0; $scope.count1 = 0; $scope.count2 = 0;$scope.count5 = 0;
          $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
@@ -290,6 +293,10 @@ $rootScope.count3=$scope.count3;
         $rootScope.count=$scope.count;
         $rootScope.count1=$scope.count1;
 $rootScope.count3=$scope.count3;
+
+
+
+
     };
 }]);
 </script>
