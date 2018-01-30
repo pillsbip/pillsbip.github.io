@@ -57,6 +57,7 @@
 							<h2><i class="fa fa-diamond"></i> Projects</h2>
 							<ul>
 								<div ng-controller="myCtrl">
+                                                                <li> <button ng-click="myFunc8()" ng-class="{'setbg': count8 == 1}"  ng-model="myValue8" />Data matching related to credit card applications - Verifier</li>
                                                                 <li> <button ng-click="myFunc6()" ng-class="{'setbg': count6 == 1}"  ng-model="myValue6" />Statistical analysis for client reports - AccessibilityOz</li>
 								 <li> <button ng-click="myFunc7()" ng-class="{'setbg': count7 == 1}"  ng-model="myValue7" />Build your resume in R!</li>                                                                 <li> <button ng-click="myFunc5()" ng-class="{'setbg': count5 == 1}" ng-model="myValue5" />Analysis of customer and employee data-iSelect</li>
 								<li> <button ng-click="myFunc()" ng-class="{'setbg': count == 1}" ng-model="myValue" />Machine learning for speech therapy</li>
@@ -88,6 +89,37 @@
 						</div>
 						
 	</div>			
+
+
+<div class="post" ng-show="count8">
+				<h2 class="title"><i class="fa fa-eye"></i> Data matching related to credit card applications - Verifier </h2>
+                         <p class="byline"></p>
+<div class="entry">
+			<p>Verifier performs income verification for credit card applications by matching applicant income information
+with databases containing income details such as superannuation databases. As part of this process, an HTML
+dashboard, constructed using R Markdown, with statistical analysis of the number of matching applicants and
+income matching is also generated. I have performed the following tasks:
+<ul>
+<li>Demonstrated that the use of fuzzy string matching (written using R) can enhance data matching (with
+the database under consideration) from 13% to 21% of applications.
+</li>
+<li>Data supplied to the dashboard consists of files with varying number of input fields and with information
+such as dates formatted in a varying fashion. Some of the rows may also contain incorrect data. Using R,
+I have preprocessed the data and ensured that dashboard can be generated every week irrespective of
+the nature of the data provided.
+</li>
+<li>Using a combination of R, HTML and JavaScript, I have added interactive components such as radio
+buttons to record dashboard user options, comment boxes etc. to the R Markdown dashboard.
+</li>
+</ul>	
+</p>		
+</div>
+
+
+</div>	
+
+
+
 
 
 <div class="post" ng-show="count6">
@@ -238,10 +270,10 @@ angular.module('myApp', [])
 $scope.count6 = 0;$scope.color6=0;$rootScope.color6=0;
  $rootScope.count5 = 0;
 $rootScope.count6 = 0;
-$scope.count7 = 0;$rootScope.count7 = 0;
+$scope.count7 = 0;$rootScope.count7 = 0;$scope.count8 = 0;$rootScope.count8 = 0;
     $scope.myFunc5 = function() {
         $scope.count5=($scope.count5+1)%2;
-         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count = 0;$scope.count6 = 0;$scope.count7 = 0;
+         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count = 0;$scope.count6 = 0;$scope.count7 = 0;$scope.count8 = 0;
 	 $rootScope.count7=$scope.count7;
          $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
@@ -249,11 +281,25 @@ $scope.count7 = 0;$rootScope.count7 = 0;
         $rootScope.count=$scope.count;
 $rootScope.count2=$scope.count2;
 $rootScope.count3=$scope.count3;
+$rootScope.count8=$scope.count8;
     };
 $scope.myFunc7 = function() {
         $scope.count7=($scope.count7+1)%2;
-         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count = 0;$scope.count6 =0;$scope.count5 =0;
+         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count = 0;$scope.count6 =0;$scope.count5 =0;$scope.count8 = 0;
 	$rootScope.count7=$scope.count7;
+         $rootScope.count6=$scope.count6;
+	 $rootScope.count5=$scope.count5;
+           $rootScope.count1=$scope.count1;
+        $rootScope.count=$scope.count;
+$rootScope.count2=$scope.count2;
+$rootScope.count3=$scope.count3;
+$rootScope.count8=$scope.count8;
+    };
+$scope.myFunc8 = function() {
+        $scope.count8=($scope.count8+1)%2;
+         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count = 0;$scope.count6 =0;$scope.count5 =0;scope.count7 =0;
+	$rootScope.count7=$scope.count7;
+        $rootScope.count8=$scope.count8;
          $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
            $rootScope.count1=$scope.count1;
@@ -263,7 +309,7 @@ $rootScope.count3=$scope.count3;
     };
    $scope.myFunc = function() {
         $scope.count=($scope.count+1)%2;
-         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count5 = 0;$scope.count6 = 0;$scope.count7 = 0;
+         $scope.count1 = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count5 = 0;$scope.count6 = 0;$scope.count7 = 0;$scope.count8 = 0;
 	 $rootScope.count7=$scope.count7;
          $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
@@ -271,11 +317,12 @@ $rootScope.count3=$scope.count3;
         $rootScope.count=$scope.count;
 $rootScope.count2=$scope.count2;
 $rootScope.count3=$scope.count3;
+$rootScope.count8=$scope.count8;
     };
     $scope.myFunc1 = function() {
         $scope.count1=($scope.count1+1)%2;
 	
-         $scope.count = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count5 = 0;$scope.count6 = 0;$scope.count7 = 0;
+         $scope.count = 0; $scope.count2 = 0;$scope.count3 = 0;$scope.count5 = 0;$scope.count6 = 0;$scope.count7 = 0;$scope.count8 = 0;
 	 $rootScope.count7=$scope.count7;
 	 $rootScope.count5=$scope.count5;
          $rootScope.count6=$scope.count6;
@@ -283,10 +330,11 @@ $rootScope.count3=$scope.count3;
         $rootScope.count=$scope.count;
     $rootScope.count2=$scope.count2;
 $rootScope.count3=$scope.count3;
+$rootScope.count8=$scope.count8;
 };
  $scope.myFunc2 = function() {
         $scope.count2=($scope.count2+1)%2;
-         $scope.count = 0; $scope.count1 = 0; $scope.count3 = 0;$scope.count5 = 0;$scope.count6 = 0;$scope.count7 = 0;
+         $scope.count = 0; $scope.count1 = 0; $scope.count3 = 0;$scope.count5 = 0;$scope.count6 = 0;$scope.count7 = 0;$scope.count8 = 0;
 	 $rootScope.count7=$scope.count7;
          $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
@@ -294,11 +342,12 @@ $rootScope.count3=$scope.count3;
         $rootScope.count=$scope.count;
         $rootScope.count1=$scope.count1;
 $rootScope.count3=$scope.count3;
+$rootScope.count8=$scope.count8;
     };
 
  $scope.myFunc3 = function() {
         $scope.count3=($scope.count3+1)%2;
-         $scope.count = 0; $scope.count1 = 0; $scope.count2 = 0;$scope.count5 = 0;$scope.count6 = 0;$scope.count7 = 0;
+         $scope.count = 0; $scope.count1 = 0; $scope.count2 = 0;$scope.count5 = 0;$scope.count6 = 0;$scope.count7 = 0;$scope.count8 = 0;
 	 $rootScope.count7=$scope.count7;
          $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
@@ -306,12 +355,13 @@ $rootScope.count3=$scope.count3;
         $rootScope.count=$scope.count;
         $rootScope.count1=$scope.count1;
 $rootScope.count3=$scope.count3;
+$rootScope.count8=$scope.count8;
     };
  $scope.myFunc6 = function() {
         
         $scope.count6=($scope.count6+1)%2;
         $scope.count3 = 0;
-         $scope.count = 0; $scope.count1 = 0; $scope.count2 = 0;$scope.count5 = 0;$scope.count7 = 0;
+         $scope.count = 0; $scope.count1 = 0; $scope.count2 = 0;$scope.count5 = 0;$scope.count7 = 0;$scope.count8 = 0;
 	 $rootScope.count7=$scope.count7;
          $rootScope.count6=$scope.count6;
 	 $rootScope.count5=$scope.count5;
@@ -319,7 +369,7 @@ $rootScope.count3=$scope.count3;
         $rootScope.count=$scope.count;
         $rootScope.count1=$scope.count1;
 $rootScope.count3=$scope.count3;
-
+$rootScope.count8=$scope.count8;
 
 
 
